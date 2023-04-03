@@ -1,0 +1,11 @@
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 0.375rem;
+    font-weight: 500;
+}
+
+.brand-img {
+  width: 1.625rem;
+  height: 1.625rem;
+}

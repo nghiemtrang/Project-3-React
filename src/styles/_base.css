@@ -1,0 +1,50 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+input,
+button {
+  cursor: pointer;
+  background-color: none;
+  border: none;
+  font-family: inherit;
+}
+
+body {
+  font-family: var(--body-ff);
+  font-size: var(--fs-base);
+  font-weight: 400;
+  line-height: var(--lh-base);
+  color: var(--body-color);
+  background-color: var(--thirdary-color);
+  overflow-x: hidden;
+}
+
+@media (max-width: 376px) {
+  body {
+    font-size: var(--fs-moblie);
+    font-weight: 400;
+    line-height: var(--lh-moblie);
+  }
+}

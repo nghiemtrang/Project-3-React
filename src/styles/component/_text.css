@@ -1,0 +1,27 @@
+.text-sm {
+    font-size: 0.875rem;
+    line-height: calc(24 / 14);
+  }
+  
+  .text-md {
+    font-size: 1rem;
+    line-height: calc(26 / 16);
+  }
+  
+  .text-lg {
+    font-size: 1.125rem;
+    line-height: calc(28 / 18);
+  }
+  
+  .text-xl {
+    font-size: 1.5rem;
+    line-height: calc(34 / 24);
+  }
+   
+  .text-box-sm{
+    max-width: 29.5rem;
+  }
+  
+  .text-box-md{
+    max-width: 35.5rem;
+  }

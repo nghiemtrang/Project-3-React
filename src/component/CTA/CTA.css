@@ -1,0 +1,42 @@
+.CTA {
+    background-color: var(--bg-color);
+    color: var(--body-color);
+  }
+  
+  .CTA-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8.125rem;
+    padding:8.125rem 0 5rem;
+  }
+  
+  .CTA-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.875rem;
+  }
+  
+  .CTA-content> h2{
+      margin-bottom: 1.25rem;
+  }
+  
+  .CTA-content>p {
+      margin-bottom: 2.5rem;
+  }
+  
+  @media (max-width:900px) {
+    .CTA-container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 2.265rem;
+    padding:3.5rem 0;
+    }
+  }
+  
+  @media (max-width: 650px){
+    .CTA-btn{
+      display: block;
+      margin-bottom: 0.75rem;
+    }
+    
+  }

@@ -1,0 +1,144 @@
+.footer {
+    background-color: var(--bg-color);
+    color: var(--body-color);
+  }
+  
+  .footer-border {
+    padding: 5.5rem 0 2.375rem 0;
+    border-bottom: 0.07rem solid rgba(205, 201, 187, 1);
+    border-top: 0.07rem solid rgba(205, 201, 187, 1);
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-brand {
+    max-width: 350px;
+  }
+  
+  .footer-brand > .brand {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-brand > p {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-input-box {
+    display: flex;
+    gap: 1.25rem;
+  }
+  
+  .footer-input {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 0.05rem solid rgba(205, 201, 187, 1);
+    border-radius: var(--rounded-sm);
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 6.25rem;
+  }
+  
+  .footer-links > ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footer-links > .link-list > h4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-links > .link-list > ul > li {
+    padding-bottom: 1.125rem;
+  }
+  
+  .footer-links > .link-list > .heading:hover{
+    color: var(--secondary-color);
+  }
+  
+  .copy-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .copy-right > .media {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+  }
+  
+  .media-link {
+    padding: 0.5rem;
+    border-radius: 9999px;
+    background-color: var(--primary-color);
+    display: block;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .media-img {
+    width: 1rem;
+    height: 1rem;
+  }
+  
+  .media-link:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    background-color: var(--secondary-color);
+  }
+  
+  @media (max-width: 900px){
+    .footer-border {
+      padding: 2.75rem 0;
+    }
+  
+    .footer-content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2.25rem;
+    }
+  
+    .footer-links {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  
+  
+  @media (max-width: 650px) {
+  
+    .footer-border {
+      padding: 1.75rem 0;
+    }
+  
+    .footer-content {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2.25rem;
+    }
+  
+    .footer-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.875rem;
+    }
+    
+    .copy-right {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1.125rem;
+    }
+  }
+  

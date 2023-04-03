@@ -1,0 +1,122 @@
+.header{
+    background-color: var(--bg-color);
+  }
+  
+  .header-img {
+    max-width: 100%;
+    margin: 3rem auto;
+  }
+  
+  .header-img-box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.875rem;
+  }
+  
+  .header-img-down {
+    transform: translateY(1.875rem);
+  }
+  
+  .header-text {
+    max-width: 60.5rem;
+    margin-bottom: 3.125rem;
+    color: var(--body-color);
+  }
+  
+  .header-search {
+    max-width: 66.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5.625rem;
+  }
+  
+  .header-search > .scroll {
+    width: 6.125rem;
+    height: 4.75rem;
+  }
+  
+  .header-search > .search-box {
+    background-color: var(--thirdary-color);
+    border-radius: var(--rounded-sm);
+    max-width: 46rem;
+    display: flex;
+    gap: 1.25rem;
+    padding: 2rem 1.25rem;
+  }
+  
+  .search-place,
+  .search-type {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d6d4dd;
+    border-radius: var(--rounded-sm);
+    padding: 0.75rem;
+  }
+  
+  .btn-box {
+    background-color: var(--secondary-color);
+    color: var(--thirdary-color);
+    display: flex;
+    gap: 1.25rem;
+    align-items: center;
+    padding: 0.75rem;
+  }
+  
+  @media (max-width: 1024px) {
+    .header-img {
+      margin: 3.75rem auto;
+    }
+  
+    .header-text {
+      max-width: 50rem;
+      margin-bottom: 3.125rem;
+    }
+  
+  }
+  
+  @media (max-width:900px){
+    .header-img {
+      margin: 2rem auto 3.5rem;
+    }
+  
+    .header-img-box {
+      gap: 1rem;
+    }
+    .header-search {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap:3.5rem;
+      justify-content: space-between  ;
+      margin-bottom: 3.5rem;
+      transition: 0.3s;
+    }
+  }
+  
+  @media (max-width: 780px) {
+    .header-search > .search-box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .header-img-box {
+      gap: 0.5rem;
+    }
+  
+    .header-search {
+      display: flex;
+      flex-direction: column;
+      gap:3.375rem;
+    }
+  
+    .header-search > .search-box {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  

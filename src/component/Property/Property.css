@@ -1,0 +1,134 @@
+.property {
+    font-size: var(--fn-base);
+    background: linear-gradient(
+      to bottom,
+      var(--primary-color) 55%,
+      var(--thirdary-color) 45%
+    );
+    color: var(--thirdary-color);
+    width: 100%;
+    height: 85%;
+    padding-top: 10.5rem;
+    padding-bottom: 5rem;
+  }
+  
+  .property-text {
+    display: flex;
+    justify-content: space-between;
+    max-width: 48rem;
+    margin: 0 0 0 auto;
+    padding-bottom: 4.375rem;
+  }
+  
+  .property-link {
+    display: block;
+    display: flex;
+    gap: 1.75rem;
+    align-items: end;
+  }
+  
+  .property-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+    padding-bottom: 0.5rem;
+    transition: 0.3s;
+  }
+  
+  ul li:hover .property-img {
+    transform: translateY(-4.25rem);
+    transition: 0.3s;
+  }
+  
+  .property-item-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.75rem;
+    transition: 0.3s;
+  }
+  
+  ul li .property-item-info {
+    opacity: 0;
+  }
+  
+  .dolla-color {
+    color: var(--secondary-color);
+  }
+  
+  .property-active {
+    text-align: center;
+  }
+  
+  ul li:hover .property-item-info {
+    transform: translateY(-6rem);
+    opacity: 1;
+  }
+  
+  @media (max-width: 780px) {
+    .property {
+      font-size: var(--fn-base);
+      background: linear-gradient(
+        to bottom,
+        var(--primary-color) 65%,
+        var(--thirdary-color) 35%
+      );
+      padding: 3.5rem 0;
+    }
+  
+    .property-items {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      transition: 0.3s;
+    }
+  
+    .property-item-display {
+      display: none;
+    }
+  
+    ul li .property-item-info {
+      opacity: 1;
+    }
+  
+    ul li:hover .property-img {
+      transform: translateY(0);
+    }
+  
+    ul li:hover .property-item-info {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  
+    .property-active {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 650px) {
+    .property {
+      padding: 3.5rem 0;
+    }
+  
+    .property-text {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 3.375rem;
+      transition: 0.3s;
+    }
+  
+    .property-content > p {
+      padding-bottom: 1.75rem;
+    }
+  
+    ul li .property-item-info > h4 {
+      font-size: var(--fn-moblie);
+      line-height: var(--lh-moblie);
+    }
+  
+    ul li .property-item-info > h3 {
+      font-size: var(--fn-base);
+      list-style: var(--lh-base);
+    }
+  }
+  
+  

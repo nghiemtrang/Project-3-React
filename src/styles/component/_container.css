@@ -1,0 +1,11 @@
+.container{
+    max-width: 70rem;
+    margin: 0 auto;
+    padding:var(--container-padding);
+}
+
+.container-fluid{
+    margin:0 auto;
+    padding:var(--container-padding);
+}
+

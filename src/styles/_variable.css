@@ -1,0 +1,32 @@
+:root {
+    /*color */
+    --primary-color: #6637ee;
+    --secondary-color: #fd5f0e;
+    --thirdary-color: #ffff;
+    --heading-color: #191623;
+    --body-color: #666270;
+    --bg-color: #fffae9;
+  
+    /* Typograohy */
+    --heading-ff: "Albert Sans", sans-serif;
+    --body-ff: "Albert Sans", sans-serif;
+  
+    --fs-base: 1.125rem;
+    --lh-base: calc(28 / 18);
+  
+    --fs-moblie: 0.875rem;
+    --lh-moblie: calc(24/14);
+  
+    /* Border radius */
+    --rounded-sm: 0.375rem;
+    --rounded: 0.75rem;
+    --rounded-full: 9999px;
+  
+    /* Border */
+  
+    /* Container */
+  --container-padding: 1.25rem;
+    /* Trasition */
+    --transition: all 0.3s ease;
+  }
+  
